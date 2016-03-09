@@ -2,7 +2,7 @@ CC=javac
 FLAGS=-g
 SRC=$(wildcard *.java)
 TARGETS=$(SRC:.java=.class)
-OUT=worm
+OUT=Worm
 ARGS=sample_in.txt
 CLASSPATH=.:lib/algs4.jar
 
@@ -15,7 +15,7 @@ run:
 	java -classpath $(CLASSPATH) -ea $(OUT) $(ARGS)
 
 debug:$(TARGETS)
-	jdb $(OUT) $(ARGS)
+	jdb -classpath $(CLASSPATH) $(OUT) $(ARGS)
 
 clean:
 	rm *.class
