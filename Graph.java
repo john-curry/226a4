@@ -4,6 +4,7 @@ import edu.princeton.cs.algs4.*;
 
 public class Graph {
   HashMap<String, ArrayList<EdgeTo>> graph;
+  public int V() { return graph.keySet().size(); }
 
   public Graph(HashMap<String, Point> coords) { 
     // build graph
