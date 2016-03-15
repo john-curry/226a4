@@ -11,6 +11,7 @@ public class Wormholes implements Iterable<Wormhole> {
   public boolean exists(EdgeTo e) { 
     return exists(new Wormhole(e.from, e.to));
   }
+
   public Iterator<Wormhole> iterator() {
     return wormholes.iterator();
   }

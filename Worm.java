@@ -33,17 +33,15 @@ public class Worm {
 
 
   public double dist( String origP, String destP ) {
-     // return the distance from origP to destP
-     throw new RuntimeException("Not yet implemented");
+    return sp.distanceBetween(origP, destP);
   }
      
   public int   worms( String origP, String destP ) { 
-     // least number of wormholes in any shortest path from origP to destP
-     throw new RuntimeException("Not yet implemented");
+    return sp.wormholesBetween(origP, destP);
   }
 
   public String query( String origP, String destP ) {
-    return "The distance between " + origP + " and " + destP + " is " + sp.distanceBetween(origP, destP);
+    return "The distance from " + origP + " and " + destP + " is " + sp.distanceBetween(origP, destP) + " parsecs using " + worms(origP, destP) + " wormholes.";
   }
  
   public static void main(String[] args) {
