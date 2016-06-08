@@ -3,4 +3,4 @@ Given a list of planets seperated by wormholes, use Euclidean distance to find t
 
 Uses Floyd-Warshall shortest path algorithm to find the shortest distance between all planets as well as the number of wormholes between planets.
 
-The planets are represented by a Direct Graph
+The planets are represented by a Direct Graph where the weights are the distance between two planets and a wormholes is a zero weight.
